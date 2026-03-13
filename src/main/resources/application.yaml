@@ -19,7 +19,7 @@
 
 # Standard spring runtime configuration.
 server:
-  port: 8081  # Change to the desired port number
+  port: 8080  # Change to the desired port number
   servlet:
     context-path: /
 
@@ -41,7 +41,7 @@ springdoc:
 # Application specific configuration.
 iri:
   server:
-    root: "http://localhost:8081"
+    root: "http://localhost:8080"
     #proxy: "https://iri.es.net"
 
 # IRI Facility Status API test data.
