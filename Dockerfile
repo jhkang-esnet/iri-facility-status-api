@@ -8,7 +8,7 @@ WORKDIR $HOME
 COPY . .
 RUN mvn -f pom.xml clean package
 
-FROM eclipse-temurin:21-jdk
+FROM eclipse-temurin:21-jre
 
 WORKDIR /
 COPY --from=MAVEN_BUILD /iri/target/*.jar /app.jar
